@@ -43,11 +43,12 @@ public class JavaBasicArrayEx {
 	}
 	public static void EX3() {
 		char c[]= {'T','h','i','s',' ','i','s',' ', 'a', ' ', 'p','e','n','c','i','l'};
-		c[4]=',';
-		c[7]=',';
-		c[9]=',';
+		
 		System.out.print("3번 문제의 답:");
 		for (int i = 0; i < c.length; i++) {
+			if(c[i]==' ') {
+			c[i]=',';
+			}
 			System.out.print(c[i]);
 		}
 		System.out.println();
